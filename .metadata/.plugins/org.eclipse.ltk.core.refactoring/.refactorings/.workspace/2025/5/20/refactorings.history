@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;tdse-tp3_02-code_integration/app/src/gitignore&apos;" deleteContents="false" description="Delete resource &apos;tdse-tp3_02-code_integration/app/src/gitignore&apos;" element1="/tdse-tp3_02-code_integration/app/src/gitignore" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1747431792396"/>
+</session>

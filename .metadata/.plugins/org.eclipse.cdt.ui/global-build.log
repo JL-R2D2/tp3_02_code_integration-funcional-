@@ -1,0 +1,21 @@
+18:48:31 **** Incremental Build of configuration Debug for project tdse-tp3_02-code_integration ****
+make -j8 all 
+arm-none-eabi-gcc "../app/src/display.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../app/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"app/src/display.d" -MT"app/src/display.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/src/display.o"
+arm-none-eabi-gcc -o "tdse-tp3_02-code_integration.elf" @"objects.list"  -lrdimon -mcpu=cortex-m3 -T"C:\Users\joaco\STM32CubeIDE\tdse_workspace_tp3\tdse-tp3_02-code_integration(MH)\tdse-tp3_02-code_integration-main\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tdse-tp3_02-code_integration.map" -Wl,--gc-sections -static -specs=rdimon.specs --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: tdse-tp3_02-code_integration.elf
+ 
+arm-none-eabi-size  tdse-tp3_02-code_integration.elf 
+arm-none-eabi-objdump -h -S tdse-tp3_02-code_integration.elf  > "tdse-tp3_02-code_integration.list"
+   text	   data	    bss	    dec	    hex	filename
+  14452	    128	   2248	  16828	   41bc	tdse-tp3_02-code_integration.elf
+Finished building: default.size.stdout
+ 
+Finished building: tdse-tp3_02-code_integration.list
+ 
+18:48:37 **** Incremental Build of configuration Debug for project tdse-tp3_02-code_integration ****
+make -j8 all 
+arm-none-eabi-size  tdse-tp3_02-code_integration.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14452	    128	   2248	  16828	   41bc	tdse-tp3_02-code_integration.elf
+Finished building: default.size.stdout
+ 

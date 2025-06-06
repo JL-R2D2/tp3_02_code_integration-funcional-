@@ -1,0 +1,44 @@
+17:44:49 **** Incremental Build of configuration Debug for project tdse-tp3_06-interactive_menu ****
+make -j8 all 
+arm-none-eabi-gcc "../app/src/task_sensor.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../app/inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"app/src/task_sensor.d" -MT"app/src/task_sensor.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/src/task_sensor.o"
+../app/src/task_sensor.c:64:23: error: 'BTN_ENT_PORT' undeclared here (not in a function); did you mean 'BTN_A_PORT'?
+   64 |         {ID_BTN_ENT,  BTN_ENT_PORT,  BTN_ENT_PIN,  BTN_ENT_PRESSED, DEL_BTN_XX_MAX,
+      |                       ^~~~~~~~~~~~
+      |                       BTN_A_PORT
+../app/src/task_sensor.c:64:38: error: 'BTN_ENT_PIN' undeclared here (not in a function); did you mean 'BTN_A_PIN'?
+   64 |         {ID_BTN_ENT,  BTN_ENT_PORT,  BTN_ENT_PIN,  BTN_ENT_PRESSED, DEL_BTN_XX_MAX,
+      |                                      ^~~~~~~~~~~
+      |                                      BTN_A_PIN
+../app/src/task_sensor.c:64:52: error: 'BTN_ENT_PRESSED' undeclared here (not in a function); did you mean 'BTN_A_PRESSED'?
+   64 |         {ID_BTN_ENT,  BTN_ENT_PORT,  BTN_ENT_PIN,  BTN_ENT_PRESSED, DEL_BTN_XX_MAX,
+      |                                                    ^~~~~~~~~~~~~~~
+      |                                                    BTN_A_PRESSED
+../app/src/task_sensor.c:66:23: error: 'BTN_NEX_PORT' undeclared here (not in a function); did you mean 'BTN_A_PORT'?
+   66 |         {ID_BTN_NEX,  BTN_NEX_PORT,  BTN_NEX_PIN,  BTN_NEX_PRESSED, DEL_BTN_XX_MAX,
+      |                       ^~~~~~~~~~~~
+      |                       BTN_A_PORT
+../app/src/task_sensor.c:66:38: error: 'BTN_NEX_PIN' undeclared here (not in a function); did you mean 'BTN_A_PIN'?
+   66 |         {ID_BTN_NEX,  BTN_NEX_PORT,  BTN_NEX_PIN,  BTN_NEX_PRESSED, DEL_BTN_XX_MAX,
+      |                                      ^~~~~~~~~~~
+      |                                      BTN_A_PIN
+../app/src/task_sensor.c:66:52: error: 'BTN_NEX_PRESSED' undeclared here (not in a function); did you mean 'BTN_A_PRESSED'?
+   66 |         {ID_BTN_NEX,  BTN_NEX_PORT,  BTN_NEX_PIN,  BTN_NEX_PRESSED, DEL_BTN_XX_MAX,
+      |                                                    ^~~~~~~~~~~~~~~
+      |                                                    BTN_A_PRESSED
+../app/src/task_sensor.c:68:23: error: 'BTN_ESC_PORT' undeclared here (not in a function); did you mean 'BTN_A_PORT'?
+   68 |         {ID_BTN_ESC,  BTN_ESC_PORT,  BTN_ESC_PIN,  BTN_ESC_PRESSED, DEL_BTN_XX_MAX,
+      |                       ^~~~~~~~~~~~
+      |                       BTN_A_PORT
+../app/src/task_sensor.c:68:38: error: 'BTN_ESC_PIN' undeclared here (not in a function); did you mean 'BTN_A_PIN'?
+   68 |         {ID_BTN_ESC,  BTN_ESC_PORT,  BTN_ESC_PIN,  BTN_ESC_PRESSED, DEL_BTN_XX_MAX,
+      |                                      ^~~~~~~~~~~
+      |                                      BTN_A_PIN
+../app/src/task_sensor.c:68:52: error: 'BTN_ESC_PRESSED' undeclared here (not in a function); did you mean 'BTN_A_PRESSED'?
+   68 |         {ID_BTN_ESC,  BTN_ESC_PORT,  BTN_ESC_PIN,  BTN_ESC_PRESSED, DEL_BTN_XX_MAX,
+      |                                                    ^~~~~~~~~~~~~~~
+      |                                                    BTN_A_PRESSED
+make: *** [app/src/subdir.mk:37: app/src/task_sensor.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+17:44:49 Build Failed. 10 errors, 0 warnings. (took 695ms)
+
