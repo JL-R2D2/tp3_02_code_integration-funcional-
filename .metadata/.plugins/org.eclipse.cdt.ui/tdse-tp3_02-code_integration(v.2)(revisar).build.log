@@ -1,0 +1,13 @@
+17:19:21 **** Incremental Build of configuration Debug for project tdse-tp3_02-code_integration(v.2)(revisar) ****
+make -j8 all 
+arm-none-eabi-size  tdse-tp3_02-code_integration(v.2)(revisar).elf 
+arm-none-eabi-objdump -h -S tdse-tp3_02-code_integration(v.2)(revisar).elf  > "tdse-tp3_02-code_integration(v.2)(revisar).list"
+c:/st/stm32cubeide_1.18.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_2.2.0.202409170845/tools/bin/sh: syntax error: unexpected "("
+make: *** [makefile:70: default.size.stdout] Error 2
+make: *** Waiting for unfinished jobs....
+c:/st/stm32cubeide_1.18.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.make.win32_2.2.0.202409170845/tools/bin/sh: syntax error: unexpected "("
+make: *** [makefile:75: tdse-tp3_02-code_integration(v.2)(revisar).list] Error 2
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+17:19:21 Build Failed. 3 errors, 0 warnings. (took 364ms)
+

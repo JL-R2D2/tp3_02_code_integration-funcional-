@@ -1,10 +1,10 @@
-18:48:37 **** Incremental Build of configuration Debug for project tdse-tp3_02-code_integration ****
+17:41:13 **** Incremental Build of configuration Debug for project tdse-tp3_02-code_integration ****
 make -j8 all 
 arm-none-eabi-size  tdse-tp3_02-code_integration.elf 
    text	   data	    bss	    dec	    hex	filename
-  14452	    128	   2248	  16828	   41bc	tdse-tp3_02-code_integration.elf
+  14568	    128	   2248	  16944	   4230	tdse-tp3_02-code_integration.elf
 Finished building: default.size.stdout
  
 
-18:48:37 Build Finished. 0 errors, 0 warnings. (took 363ms)
+17:41:13 Build Finished. 0 errors, 0 warnings. (took 358ms)
 

@@ -101,7 +101,13 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
 	/* Application Init */
-	app_init();
+    cycle_counter_init();
+  	//HAL_Delay(1);  // Esperar 1 ms
+  	//uint32_t tiempo = cycle_counter_time_us();
+  	//LOGGER_LOG("Tiempo transcurrido: %lu us\r\n", tiempo);
+
+  app_init();
+
 
   /* USER CODE END 2 */
 

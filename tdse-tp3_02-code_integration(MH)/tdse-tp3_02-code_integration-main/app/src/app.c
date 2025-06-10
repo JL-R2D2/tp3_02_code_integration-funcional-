@@ -115,6 +115,7 @@ void app_init(void)
 	}
 
 	cycle_counter_init();
+	cycle_counter_reset();
 
 	__asm("CPSID i");	/* disable interrupts*/
 	g_app_tick_cnt = G_APP_TICK_CNT_INI;

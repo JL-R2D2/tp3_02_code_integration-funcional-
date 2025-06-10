@@ -105,21 +105,13 @@ static void displayCodeWrite( bool type, uint8_t dataBus );
 
 static void delayMicroseconds(uint32_t delay)
 {
-	/*
-	uint32_t start_time_us = cycle_counter_time_us();
-	while (1)
-	{
-		uint32_t current_time_us = cycle_counter_time_us();
-		LOGGER_LOG("%ld",current_time_us);
-		if (current_time_us >= start_time_us + delay)
-		{
-			LOGGER_LOG("HOLA\r\n");
-			return;
-		}
+	uint32_t now_time_us = cycle_counter_time_us();
+	uint32_t then_time_us = now_time_us + delay;
 
+	while (now_time_us < then_time_us)
+	{
+		now_time_us = cycle_counter_time_us();
 	}
-	*/
-	HAL_Delay(1);
 }
 
 //=====[Implementations of public functions]===================================
